@@ -19,6 +19,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 ## Description
 
 In this challenge, create a web API around the following resources: `Projects` and `Actions`.
+//
 
 ## Self-Study/Essay Questions
 
