@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const baseURL = `https://brandonlent-projects-actions.herokuapp.com/`;
+const baseURL = `https://brandonlent-projects-actions.herokuapp.com`;
 
 class App extends Component {
   constructor(props) {
@@ -15,11 +15,12 @@ class App extends Component {
   componentDidMount() {
     this.getProjects();
     this.getActions();
+    console.log(this.state);
   }
   getProjects = () => {
     axios
       .get(`${baseURL}/projects`)
-      .then(res => this.setState({ projets: res.data }))
+      .then(res => this.setState({ projects: res.data }))
       .catch(err => console.log(err));
   };
   getActions = () => {
